@@ -1,0 +1,172 @@
+nav {
+
+}
+.nav-link {
+    color: gray;
+}
+
+.nav-item a:hover {
+    color: yellow;
+}
+
+.getapp {
+    height: 3rem;
+    width: 9rem;
+    border: none;
+}
+
+/* .easytext {
+    font-weight: 799;
+} */
+
+.smalltext {
+    font-size: x-small;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+.smartwallet {
+
+    background-color:#E5EFFF;
+    height: 54%;
+}
+
+.wallettext {
+    animation: enter 2s ease-out;
+    /* animation: ; */
+}
+
+@keyframes enter {
+    /* 20% {transform: translateZ(40vw)} */
+    50% { transform: translateZ(40vw)}
+}
+
+
+.smartwallet h3 {
+    /* reserved for animation */
+}
+
+.pushpayments {
+    height: 54%;
+}
+
+
+
+.autobudgeting {
+    background-color:#E5EFFF;
+    height: 54%;
+}
+
+
+.discounteddeals {
+    height: 54%;
+}
+
+.howItWorks {
+    background-color: #F2F3F6;
+    height: 55%;
+}
+
+/* .card-group {
+    width: 55vw;
+} */
+
+.card-title {
+    color: #00255E
+}
+
+/* .card {
+height: 5rem;
+width: 5rem;
+} */
+
+.paymentsblue {
+    background-color:#00255E;
+    height: 30%;
+}
+
+.scanning {
+    animation: float 2s linear;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    /* z-index: -1; */ 
+    margin: 2em;
+    }
+    
+    @keyframes float {
+        0% {transform: translateY(20vw)}
+        50% { transform: translateY(0vw)}
+    }
+    
+
+.testimonials {
+    height: 35%;
+}
+
+.testcardp {
+    line-height: 2rem;
+}
+
+.round {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.last {
+    background-color: #F2F3F6;
+    height: 20.5%;
+}
+
+.btnwhite {
+    background-color: white;
+}
+
+.bluecircle {
+    height: 3.8rem;
+    width: 3.8rem;
+    background-color: #1068ED;
+    top: 89%;
+    left: 95%;
+
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+/* Medium devices (tablets, 768px and up)  */
+
+
+@media (max-width: 768px) { 
+
+
+/* .headcenter, .smartwallet, .pushpayments, .autobudgeting,
+.discounteddeals, .paymentsblue  {
+    text-align: center;
+    justify-content: center;
+    } */
+
+}
+
+@media (max-width: 576px) { 
+   
+
+    .bluecircle {
+
+        left: 75%;
+    
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+   
+
+}
+
