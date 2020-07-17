@@ -6,12 +6,13 @@
     <title>class project 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="C:\Users\solomonogum\Downloads\bootstrap-4.4.1-dist\bootstrap-4.4.1-dist/css/">
-    <link rel="stylesheet" href="C:\Users\solomonogum\Downloads\fontawesome-free-5.12.0-web\fontawesome-free-5.12.0-web/css/all.css"> -->
+
   <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- I apologize, this is for my animations, but when I turn this on, it breaks the fixed items on the page (navbar and circle icon): -->
+    <!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
 
 </head>
@@ -23,12 +24,12 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-white py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./img/jiggle-logo-blue.svg" class="img-fluid" width="130vw" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#exampleModal3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -59,15 +60,19 @@
 
      <div class="row">
          
-<div class="col-md-6 col-lg-6 col-sm-6 mb-5 pb-4 headcenter">
+<div class="col-md-12 col-sm-12 col-lg-6 mb-5 pb-4 justify-content-md-center justify-content-sm-center text-center text-lg-left">
 
-    <h2 class="mt-5 pt-5 font-weight-bold" data-aos="slide-right">Easy, Fast and Affordable <br>
+    <h2 class="mt-5 pt-5 font-weight-bold text-center justify-content-md-center justify-content-sm-center text-center text-lg-left" data-aos="slide-right">Easy, Fast and Affordable <br>
     way to make payments</h2>
 
-    <p class="mt-5 mb-5" data-aos="fade-in">We provide an easier way for you to make instant payments
+    <p class="mt-5 mb-5 text-center text-lg-left" data-aos="fade-in">We provide an easier way for you to make instant payments
          to your bills, shopping items and meals directly to your smartphone</p>
 
-         <div class="d-flex">
+         <!-- For some reason, in this div, these are affecting large screens:
+         "justify-content-md-center"
+         "justify-content-sm-center"
+         -->
+         <div class="d-flex centermedium">
             <a type="button" href="#" class="mr-3" >
                 <img src="./img/get-it-on-playstore.svg" class="img-fluid" width="160vw" alt="">
             </a>
@@ -77,8 +82,8 @@
          </div>
 
          <div>
-             <h5 class="mt-4">Now Available at:</h5>
-             <div class="d-flex">
+             <h5 class="mt-4 justify-content-md-center justify-content-sm-center text-lg-left">Now Available at:</h5>
+             <div class="d-flex centermedium float-lg-left grayfilter">
                  <img src="./img/eni-stores-logo.svg" class="img-fluid" alt="">
                  <img src="./img/killimanjaro-logo.svg" class="img-fluid" alt="">
                  <img src="./img/crunchies-logo.svg" class="img-fluid" alt="">
@@ -88,13 +93,13 @@
 </div>
 
 
-<div class="col-md-6 col-lg-6 col-sm-6">
+<div class="col-md-6 col-sm-6 d-none d-sm-none d-md-none d-lg-block">
 
     
     <div class="d-flex justify-content-center align-items-center ">
 
-        <img src="./img/scan-mummyj.svg" class="d-none d-sm-none d-md-none d-lg-block" alt="">
-        <img src="./img/scanning-hand.svg" class="scanning d-none d-sm-none d-md-none d-lg-block" alt="">
+        <img src="./img/scan-mummyj.svg" class="" alt="">
+        <img src="./img/scanning-hand.svg" class="scanning" alt="">
         
                  </div>
         
@@ -123,19 +128,19 @@
             <div class="row">
             
     <div class="col-12 col-lg-6 mt-5 mr-auto">
-    <h3 class="wallettext pt-5 mt-5 font-weight-bold" data-aos="slide-right" data-aos-once="false">
+    <h3 class="wallettext pt-5 mt-5 text-center text-lg-left font-weight-bold zero" data-aos="slide-right" data-aos-once="false">
         Smart Wallet
     </h3>
 
-    <p class="text-muted" data-aos="fade-in">Control your payments from an in-app wallet at your greatest convienience. You can fund your wallet 
+    <p class="text-muted text-center text-lg-left" data-aos="fade-in">Control your payments from an in-app wallet at your greatest convienience. You can fund your wallet 
         from your card or bank account. Choose flexible wallet or fixed wallet and pay for anything even
         you don't have physical cash.
     </p>
 
     </div>
 
-    <div class="col-lg-6 mt-5">
-        <img src="./img/Nsikak.svg" class="img-fluid float-right" alt="">
+    <div class="col-lg-6 mt-5 zero text-md-center">
+        <img src="./img/Nsikak.svg" class="img-fluid float-lg-right" alt="">
 
     </div>
     
@@ -156,18 +161,18 @@
 
         <div class="container">
     
-            <div class="row">
+            <div class="row rowswap">
           
 
-    <div class="col-lg-6 mt-5">
+    <div class="col-lg-6 mt-5 phoneswap zero text-md-center">
         <img src="./img/push-payments.svg" class="img-fluid" alt="">
 
     </div>
 
 
       
-    <div class="col-12 col-lg-6 mt-5 mr-auto">
-        <h3 class="smart-wallet pt-5 mt-5 text-center text-lg-left font-weight-bold" data-aos="slide-left">
+    <div class="col-12 col-lg-6 mt-5 mr-auto textswap">
+        <h3 class="smart-wallet pt-5 mt-5 text-center text-lg-left font-weight-bold zero" data-aos="slide-left">
             Push Payments
         </h3>
     
@@ -199,7 +204,7 @@
             <div class="row">
             
     <div class="col-12 col-lg-6 mt-5 mr-auto">
-    <h3 class="smart-wallet pt-5 mt-5 text-center text-lg-left font-weight-bold" data-aos="slide-right">
+    <h3 class="smart-wallet pt-5 mt-5 text-center text-lg-left font-weight-bold zero" data-aos="slide-right">
         Auto Budgeting
     </h3>
 
@@ -208,8 +213,8 @@
 
     </div>
 
-    <div class="col-lg-6 mt-5">
-        <img src="./img/auto-budgeting.svg" class="img-fluid float-right" alt="">
+    <div class="col-lg-6 mt-5 zero text-md-center">
+        <img src="./img/auto-budgeting.svg" class="img-fluid float-lg-right" alt="">
 
     </div>
     
@@ -223,22 +228,22 @@
 
 
 
-    <div class="discounteddeals ]">
+    <div class="discounteddeals">
 
         <div class="container">
     
-            <div class="row">
+            <div class="row rowswap">
           
 
-    <div class="col-lg-6 mt-5">
+    <div class="col-lg-6 mt-5 phoneswap zero text-md-center">
         <img src="./img/hot-deals.png" class="img-fluid" alt="">
 
     </div>
 
 
       
-    <div class="col-12 col-lg-6 mt-5 mr-auto">
-        <h3 class="smart-wallet pt-5 mt-5 font-weight-bold text-center text-lg-left" data-aos="slide-left">
+    <div class="col-12 col-lg-6 mt-5 mr-auto textswap">
+        <h3 class="smart-wallet pt-5 mt-5 font-weight-bold text-center text-lg-left zero" data-aos="slide-left">
             Discounted Deals
         </h3>
     
@@ -269,10 +274,11 @@
 
    <div class="pt-3 align-items-center justify-content-center pl-auto">
 
-<div class="row text-center justify-content-center border-top">
+<div class="row text-center justify-content-center border-top mb-3">
+    
     <div class="col-lg-6 col-md-6">
 
-        <div class="card align-items-center pb-4">
+        <div class="card shadow align-items-center">
             <img class="img-fluid mt-3" src="./img/register-hiw.svg" width="90vw" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Register for free</h4>
@@ -281,12 +287,15 @@
             </div>
           </div>
 
+
+
     </div>
 
     <div class="col-lg-6 col-md-6">
 
-        
-        <div class="card align-items-center pb-4">
+        <div style="" class="arrows"></div>
+
+        <div class="card align-items-center">
             <img class="img-fluid mt-3" src="./img/verify-hiw.svg" width="90vw" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Verify</h4>
@@ -295,15 +304,21 @@
             </div>
           </div>
 
+          
+        <div style="" class="arrows"></div>
+
+
     </div>
 
 </div>
 
-<div class="row text-center mb-5 ml-auto mr-auto">
+<div class="row text-center mb-5">
+
+    <div style="" class="arrows"></div>
 
     <div class="col-lg-6 col-md-6">
         
-        <div class="card align-items-center ml-auto">
+        <div class="card shadow align-items-center">
             <img class="img-fluid mt-3" src="./img/wallet-hiw.svg" width="90vw" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Fund Wallet</h4>
@@ -316,7 +331,7 @@
 
     <div class="col-lg-6 col-md-6">
 
-        <div class="card align-items-center">
+        <div class="card shadow align-items-center">
             <img class="img-fluid mt-3" src="./img/scan-hiw.svg" width="90vw" alt="Card image cap">
             <div class="card-body">
               <h4 class="card-title">Scan to pay</h4>
@@ -324,37 +339,10 @@
              </div>
           </div>
 
-
+          <div style="" class="arrows"></div>
     </div>
 
 </div>
-
-    <div class="card-columns " width="20%">
-        
-
-        <div style="left: 30px;
-            /* top: 80px; */
-            position: absolute;
-            width: 0;
-            z-index:1000;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 30px 30px 0;
-            border-color: transparent rgba(0, 0, 0, 0.125) transparent transparent;">
-</div>
-
-<div style="left:-29px;
-            top: 80px;
-            position: absolute;
-            width: 0;
-            z-index:1001;
-            height: 0;
-            border-style: solid;
-            border-width: 30px 30px 30px 0;
-            border-color: transparent white transparent transparent;">
-</div>
-
-      </div>
 
 
 
@@ -394,7 +382,7 @@
                     on the business while we take care of your customers' payment.
                 </p>
 
-                <button type="button" class="btn btnwhite btn-lg mt-4">Become a merchant</button>
+                <button type="button" class="btn btnwhite font-weight-bold small text-primary btn-lg mt-4">Become a merchant</button>
             
                 </div>
             
@@ -429,7 +417,6 @@
             <div class="d-flex mt-5">
                 <img src="./img/ufakobong-solomon.jpg" class="img-thumbnail img-fluid round" alt="">
                 <p class="font-weight-bold testcardp mt-2 ml-3">Ufakabong King Solomon</p>
-                <!-- <img src="./img/ufakobong-solomon.jpg" class="img-thumbnail img-fluid rounded-circle" alt=""> -->
                 
             </div>
 
@@ -463,13 +450,6 @@
           </div>
         </div>
       </div>
-<!-- 
-   <div class="pt-3 align-items-center justify-content-center">
-
-
-
-
-</div> -->
 
         </div>
 </div>
@@ -484,7 +464,7 @@
 
     <div class="container">
     
-    <div class="row">
+    <div class="row d-md-inline-flex">
 
         <div class="col-lg-6 mt-5">
             <a href="" class="d-none d-lg-block">
@@ -511,7 +491,7 @@
         <div class="col-lg-3 mt-5">
 
 
-        <div class="row d-sm-flex d-md-flex d-xs-flex d-flex">
+        <div class="row d-sm-inline-flex d-md-inline-flex d-xs-flex">
 
 <div class="col-lg-6">
 
@@ -570,7 +550,7 @@
     </div>
 
     
-    <!-- <a type="button" class="bluecircle mr-4 rounded-circle position-fixed p-2 img-fluid"><i class="fas fa-comment-alt fa-2x pl-1 pt-2 text-white"></i></a> -->
+    <a type="button" class="bluecircle shadow mr-4 rounded-circle position-fixed p-2 img-fluid"><i class="fas fa-comment-alt fa-2x pl-1 pt-2 text-white"></i></a>
 
 
     <footer class="footer mt-5 border">
@@ -582,6 +562,66 @@
     
     
             </div>
+
+
+
+
+<!-- Modal -->
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+      <div class="modal-content">
+
+
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span class="display-4 text-white float-right mr-4" aria-hidden="true">×</span>
+          </button>
+
+
+
+        <div class="mt-4 ml-4">
+
+
+        <a class="" href="" class="budgetSavePay">
+
+            <div class="">
+                <h3 class="text-white mb-3 font-weight-bold">Budget</h3>
+                <h3 class="text-white mb-3 font-weight-bold">Save</h3>
+                <h3 class="text-white mb-3 font-weight-bold period">Pay</h3>
+            </div>
+        
+        </a>
+
+        <ul class="mt-4 list-unstyled text-height-2">
+          <li>
+            <a href="#" class="text-white">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Merchants</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Pricing</a>
+          </li>
+        </ul>
+
+        <div class="container mt-4 float-left">
+
+            <button type="button" href="#" class="btn bg-white text-primary btn-lg btn-block mt-4">Get App</button>
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+ 
+
 
 
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

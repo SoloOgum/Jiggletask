@@ -15,10 +15,6 @@ nav {
     border: none;
 }
 
-/* .easytext {
-    font-weight: 799;
-} */
-
 .smalltext {
     font-size: x-small;
 }
@@ -69,18 +65,9 @@ img, svg {
     height: 55%;
 }
 
-/* .card-group {
-    width: 55vw;
-} */
-
 .card-title {
     color: #00255E
 }
-
-/* .card {
-height: 5rem;
-width: 5rem;
-} */
 
 .paymentsblue {
     background-color:#00255E;
@@ -135,21 +122,82 @@ width: 5rem;
 
 }
 
+.grayfilter {
+    filter: grayscale(2)
+}
 
-/* Extra small devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap */
+.arrows {
+    left: -2%;
+    position: absolute;
+    width: 0;
+    z-index:1000;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 8px 0;
+    border-color: transparent black transparent transparent;
+}
+
+
+.budgetSavePay, h3:hover {
+    text-decoration: underline;
+}
+
+.text-height-2 {
+    line-height:2rem;
+  }
+
+
+.modal-dialog-slideout {min-height: 100vh; min-width: 100vw; margin: 0 0 0 auto;background: #fff;}
+.modal.fade .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(-100%,0)scale(1);transform: translate(-100%,0)scale(1);}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(0,0);transform: translate(0,0);display: flex;align-items: stretch;-webkit-box-align: stretch;height: 100%;}
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body{overflow-y: auto;overflow-x: hidden;}
+.modal-dialog-slideout .modal-content{border: 0; background-color: #0657CD;}
+.modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {height: 69px; display: block;} 
+.modal-dialog-slideout .modal-header h5 {float:left;}
+
+
 
 /* Medium devices (tablets, 768px and up)  */
 
 
 @media (max-width: 768px) { 
 
+    /*Have to use this since there's no class for the extra-small screen version of flex-direction/order swap in bootstrap: */
 
-/* .headcenter, .smartwallet, .pushpayments, .autobudgeting,
-.discounteddeals, .paymentsblue  {
-    text-align: center;
+.rowswap {
+    display: flex;
+    flex-direction: column;
+}
+
+.textswap {
+order: 1;
+}
+
+.phoneswap {
+    order: 2;
+
+}
+
+/* Have to use this for large screens because, for some reason, this ("justify-content-md-center") is affecting large, non-mobile screens: */
+
+
+.centermedium {
     justify-content: center;
-    } */
+}
+
+.bluecircle {
+
+    left: 88%;
+
+}
+
+}
+
+
+.zero {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 }
 
