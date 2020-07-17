@@ -157,8 +157,6 @@ img, svg {
 
 
 
-/* Medium devices (tablets, 768px and up)  */
-
 
 @media (max-width: 768px) { 
 
@@ -185,13 +183,13 @@ order: 1;
     justify-content: center;
 }
 
+
 .bluecircle {
 
     left: 88%;
 
 }
 
-}
 
 
 .zero {
@@ -212,9 +210,37 @@ order: 1;
     
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-   
+@media (min-width: 424px) and (max-width: 427px) { 
+
+    .img425center {
+
+margin-left: 2rem;
+    
+    }
+    
 
 }
 
+
+
+@media (max-width: 330px) { 
+
+    .bluecircle {
+
+        left: 81%;
+    
+    }
+    
+
+}
+
+@media (min-width: 1022px) and (max-width: 1027px) { 
+
+    .bluecircle {
+
+left: 89%;
+    
+    }
+    
+
+}
